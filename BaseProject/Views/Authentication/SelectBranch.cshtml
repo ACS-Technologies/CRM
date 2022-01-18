@@ -1,0 +1,127 @@
+﻿@model IEnumerable<POCO.Branches>
+
+@{
+    ViewBag.Title = "Select Branches";
+    Layout = null;
+}
+<!DOCTYPE html>
+
+<html dir="@(BaseProject.Controllers.LanguageController.IsRighToLeft() ? "rtl" : "ltr")">
+<head>
+    <meta charset="utf-8">
+    <title>
+        @Resources.Default.SelectBranch
+    </title>
+    <meta name="description" content="Login">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no, user-scalable=no, minimal-ui">
+    <!-- Call App Mode on ios devices -->
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <!-- Remove Tap Highlight on Windows Phone IE -->
+    <meta name="msapplication-tap-highlight" content="no">
+    <!-- base css -->
+    @if (BaseProject.Controllers.LanguageController.IsRighToLeft())
+    {
+        <link href="~/Content/css/plugins/bootstrap-rtl/bootstrap-rtl.css" rel="stylesheet" />
+    }
+
+    <link id="vendorsbundle" rel="stylesheet" media="screen, print" href="~/Content/smart_theme/dist/css/vendors.bundle.css">
+    <link id="appbundle" rel="stylesheet" media="screen, print" href="~/Content/smart_theme/dist/css/app.bundle.css">
+    <link id="mytheme" rel="stylesheet" media="screen, print" href="#">
+    <link id="myskin" rel="stylesheet" media="screen, print" href="~/Content/smart_theme/dist/css/skins/skin-master.css">
+    <!-- Place favicon.ico in the root directory -->
+    <link rel="apple-touch-icon" sizes="180x180" href="img/favicon/apple-touch-icon.png">
+    <link rel="mask-icon" href="img/favicon/safari-pinned-tab.svg" color="#5bbad5">
+    <link rel="stylesheet" media="screen, print" href="~/Content/smart_theme/dist/css/page-login-alt.css">
+    <style>
+        body {
+            overflow-y: scroll
+        }
+
+        .blankpage-form-field {
+            margin: auto
+        }
+    </style>
+</head>
+
+<body style="display:-webkit-box;padding:10px 0">
+    @{
+        POCO.CompanyInfo companyInfo = new POCO.CompanyInfo();
+        companyInfo = (POCO.CompanyInfo)Session["CompanyInfo"];
+
+
+    }
+    <a href="@Url.Action("SelectCompany")" class="btn btn-primary">@Resources.Default.BackToList</a>
+    <div class="row w-75 justify-content-center">
+        @if (Model != null && Model.ToList().Count > 0)
+        {
+            foreach (var item in Model)
+            {
+                <div class="col-xl-3 col-lg-4 col-md-6 col-sm-12 col-xs-12 my-3">
+                    <div>
+                        <div class="page-logo m-0 w-100 align-items-center justify-content-center rounded border-bottom-left-radius-0 border-bottom-right-radius-0 px-4">
+                            <a class="page-logo-link d-flex align-items-center">
+                                @if (item.Img != null)
+                                {
+                                    <div class="m-auto">
+                                        <img src="data:image/jpeg;base64,@Convert.ToBase64String(item.Img)" class="rounded-circle" alt="@item.BranchPrimaryName" aria-roledescription="logo">
+                                    </div>
+                                }
+                                else
+                                {
+                                    <div class="m-auto">
+                                        <img src="~/Content/img/branch.png" alt="@item.BranchPrimaryName" class="rounded-circle" aria-roledescription="logo">
+                                    </div>
+                                }
+                            </a>
+                        </div>
+                        <div class="card p-4 border-top-left-radius-0 border-top-right-radius-0 text-center">
+                            <a href="@Url.Action("SelectBranchLink","Authentication", new { branch = item.BranchID })">
+                                <address class="m-t-md">
+                                    <strong>  @Html.DisplayFor(modelItem => item.BranchPrimaryName)</strong><br>
+
+                                    <abbr title="Phone"></abbr>   @Html.DisplayFor(modelItem => item.BranchSecondaryName)
+                                </address>
+                            </a>
+
+                        </div>
+                    </div>
+                </div>
+            }
+
+        }
+        else
+        {
+
+
+            <div class="col-lg-12">
+                <div class="wrapper wrapper-content animated  center">
+                    <div class="row ">
+                        <label class="label label-danger">@Resources.Default.lblNoBranches</label>
+
+                    </div>
+
+                    <br />
+                    <a href="@Url.Action("SelectCompany","Authentication")">@Resources.Default.lblAnotherCompany</a>
+
+                    <br />
+                    <a href="@Url.Action("index","Dashboard")">@Resources.Default.lblGoToDashboard</a>
+
+                </div>
+
+            </div>
+        }
+    </div>
+    <h1 class="text-black my-5">@Resources.Default.SelectBranch</h1>
+    <span class="mb-3">
+        <img src="~/Content/smart_theme/dist/img/logo-big.png" width="150" />
+    </span>
+    <video poster="~/Content/smart_theme/dist/img/backgrounds/clouds.png" id="bgvid" playsinline autoplay muted loop>
+        <source src="~/Content/smart_theme/dist/media/video/cc.mp4" type="video/mp4">
+    </video>
+
+</body>
+</html>
+
+
+

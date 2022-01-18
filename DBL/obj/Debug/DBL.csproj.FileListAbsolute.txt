@@ -1,0 +1,11 @@
+C:\Users\user1\source\repos\ACS-Technologies\BaseProject\DBL\bin\Debug\DBL.dll
+C:\Users\user1\source\repos\ACS-Technologies\BaseProject\DBL\bin\Debug\DBL.pdb
+C:\Users\user1\source\repos\ACS-Technologies\BaseProject\DBL\bin\Debug\DAL.dll
+C:\Users\user1\source\repos\ACS-Technologies\BaseProject\DBL\bin\Debug\POCO.dll
+C:\Users\user1\source\repos\ACS-Technologies\BaseProject\DBL\bin\Debug\DAL.pdb
+C:\Users\user1\source\repos\ACS-Technologies\BaseProject\DBL\bin\Debug\POCO.pdb
+C:\Users\user1\source\repos\ACS-Technologies\BaseProject\DBL\obj\Debug\DBL.csproj.AssemblyReference.cache
+C:\Users\user1\source\repos\ACS-Technologies\BaseProject\DBL\obj\Debug\DBL.csproj.CoreCompileInputs.cache
+C:\Users\user1\source\repos\ACS-Technologies\BaseProject\DBL\obj\Debug\DBL.csproj.CopyComplete
+C:\Users\user1\source\repos\ACS-Technologies\BaseProject\DBL\obj\Debug\DBL.dll
+C:\Users\user1\source\repos\ACS-Technologies\BaseProject\DBL\obj\Debug\DBL.pdb

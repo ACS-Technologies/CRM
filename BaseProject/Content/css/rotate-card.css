@@ -1,0 +1,171 @@
+﻿.badgescard,
+.firstinfo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.grid-card-content {
+    position: relative;
+    animation: animatop 0.9s cubic-bezier(0.425, 1.14, 0.47, 1.125) forwards;
+}
+
+    .grid-card-content .card {
+        min-height: 100px;
+        padding: 20px;
+        border-radius: 3px;
+        background-color: white;
+        box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.2);
+        position: relative;
+        overflow: hidden;
+        border: none;
+        z-index: 9
+    }
+
+        .grid-card-content .card:after {
+            content: '';
+            display: block;
+            width: 190px;
+            height: 300px;
+            background: var(--theme-primary-300);
+            background-image: linear-gradient(267deg, rgb(78 50 120), transparent);
+            position: absolute;
+            animation: rotatemagic 0.75s cubic-bezier(0.425, 1.04, 0.47, 1.105) 1s both;
+        }
+
+.badgescard {
+    padding: 13px 20px 5px 20px;
+    background: rgba( 144, 19, 254, 0.3 );
+    box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+    backdrop-filter: blur( 6px );
+    -webkit-backdrop-filter: blur( 6px );
+    border-radius: 3px;
+    border: 1px solid rgba( 255, 255, 255, 0.18 );
+    animation: animainfos 0.5s cubic-bezier(0.425, 1.04, 0.47, 1.105) 0.75s forwards;
+    width: 38em;
+    max-width:100%;
+    margin: auto;
+    margin-top: -0.5em;
+    color: #fff
+}
+
+.grid-card-content .badgescard span {
+    font-size: 1.6em;
+    margin: 0px 6px;
+    opacity: 0.6;
+}
+
+.grid-card-content .firstinfo {
+    flex-direction: row;
+    z-index: 2;
+    position: relative;
+    height: auto
+}
+
+    .grid-card-content .firstinfo img {
+        border-radius: 50%;
+        width: 120px;
+        height: 120px;
+    }
+
+    .grid-card-content .firstinfo .profileinfo {
+        padding: 0px 20px;
+    }
+
+        .grid-card-content .firstinfo .profileinfo h1 {
+            font-size: 1.5em;
+            max-height: 55px;
+            overflow: hidden;
+            width: 182px;
+            text-overflow: ellipsis;
+        }
+
+        .grid-card-content .firstinfo .profileinfo h3 {
+            font-size: 1.1em;
+            color: var(--theme-primary-600);
+            font-style: italic;
+            max-height: 38px;
+            overflow: hidden;
+            width: 182px;
+            text-overflow: ellipsis;
+        }
+
+        .grid-card-content .firstinfo .profileinfo p.bio {
+            color: #5A5A5A;
+            font-size: 1em;
+            height: 67px;
+            max-height: 40px;
+            overflow: hidden;
+            width: 182px;
+            text-overflow: ellipsis;
+        }
+
+
+.flip {
+    height: 208px;
+    width:38em;
+    max-width: 100%;
+    margin: 0 auto;
+    z-index: 9
+}
+
+    .flip .card {
+        width: 100%;
+        height: 100%;
+    }
+
+    .flip .back {
+        color: #fff;
+        padding: 0.7em 2em;
+        border-radius: 3px
+    }
+
+    .flip .profile-image {
+        width: 8.125rem;
+        height: 8.125rem;
+        margin-top: 1.6em !important
+    }
+
+.table thead tr:first-child {
+    background-color: unset;
+    background-image: unset;
+    color: #fff;
+    text-align: center
+}
+
+@keyframes animatop {
+    0% {
+        opacity: 0;
+        bottom: -500px;
+    }
+
+    100% {
+        opacity: 1;
+        bottom: 0px;
+    }
+}
+
+@keyframes animainfos {
+    0% {
+        bottom: 10px;
+    }
+
+    100% {
+        bottom: -42px;
+    }
+}
+
+@keyframes rotatemagic {
+    0% {
+        opacity: 0;
+        transform: rotate(0deg);
+        top: -24px;
+        left: -253px;
+    }
+
+    100% {
+        transform: rotate(-30deg);
+        top: -24px;
+        left: -78px;
+    }
+}

@@ -1,0 +1,11 @@
+C:\Users\user1\source\repos\ACS-Technologies\BaseProject\Resources\bin\Debug\Resources.dll
+C:\Users\user1\source\repos\ACS-Technologies\BaseProject\Resources\bin\Debug\Resources.pdb
+C:\Users\user1\source\repos\ACS-Technologies\BaseProject\Resources\bin\Debug\ar\Resources.resources.dll
+C:\Users\user1\source\repos\ACS-Technologies\BaseProject\Resources\obj\Debug\Resources.csproj.AssemblyReference.cache
+C:\Users\user1\source\repos\ACS-Technologies\BaseProject\Resources\obj\Debug\Resources.Default.resources
+C:\Users\user1\source\repos\ACS-Technologies\BaseProject\Resources\obj\Debug\Resources.Default.ar.resources
+C:\Users\user1\source\repos\ACS-Technologies\BaseProject\Resources\obj\Debug\Resources.csproj.GenerateResource.cache
+C:\Users\user1\source\repos\ACS-Technologies\BaseProject\Resources\obj\Debug\Resources.csproj.CoreCompileInputs.cache
+C:\Users\user1\source\repos\ACS-Technologies\BaseProject\Resources\obj\Debug\ar\Resources.resources.dll
+C:\Users\user1\source\repos\ACS-Technologies\BaseProject\Resources\obj\Debug\Resources.dll
+C:\Users\user1\source\repos\ACS-Technologies\BaseProject\Resources\obj\Debug\Resources.pdb

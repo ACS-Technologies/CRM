@@ -1,0 +1,20 @@
+﻿/*****START RTL SMART CHANGES**/
+*{
+    direction:rtl
+}
+    .arabic-content .custom-control-label::after {
+        right: -1.425rem !important
+    }
+
+    .arabic-content .custom-switch {
+        padding-right: 2.46875rem;
+    }
+
+        .arabic-content .custom-switch .custom-control-label::before {
+            right: -2.46875rem;
+        }
+
+        .arabic-content .custom-switch .custom-control-label::after {
+            right: calc(-2.46875rem + 4px);
+        }
+/*****END RTL SMART CHANGES**/

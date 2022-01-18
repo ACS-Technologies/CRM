@@ -1,0 +1,6 @@
+C:\Users\user1\source\repos\ACS-Technologies\BaseProject\POCO\bin\Debug\POCO.dll
+C:\Users\user1\source\repos\ACS-Technologies\BaseProject\POCO\bin\Debug\POCO.pdb
+C:\Users\user1\source\repos\ACS-Technologies\BaseProject\POCO\obj\Debug\POCO.csproj.AssemblyReference.cache
+C:\Users\user1\source\repos\ACS-Technologies\BaseProject\POCO\obj\Debug\POCO.csproj.CoreCompileInputs.cache
+C:\Users\user1\source\repos\ACS-Technologies\BaseProject\POCO\obj\Debug\POCO.dll
+C:\Users\user1\source\repos\ACS-Technologies\BaseProject\POCO\obj\Debug\POCO.pdb
